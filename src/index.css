@@ -1,9 +1,9 @@
 /* Body css */
-body{
-    font-family: Roboto;
+* {
     margin: 0;
-    /* background-color:#eee; */
     padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
 }
 
 .search-container {
@@ -53,7 +53,7 @@ body{
     font-size: large;
     margin: 20px 0;
   }
-  
+
 /*Shimmer CSS */
 .shimmer-container {
   display: flex;
@@ -108,27 +108,39 @@ body{
 /* header css */
 
 .logo {
-    width: 50px;
+    height: 75px;
 }
 
 .header{
     display: flex;
     justify-content: space-between;
-    margin: 10px;
-    width: auto;
+    width: 100vw;
+    height: 80px;
     background-color: rgb(1, 163, 144);
     border-radius: 5px;
     box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
     color: black;
     font-weight: bold;
+    
 }
-
-.nav-items ul{
+.nav-items{
+    margin-right: 30px;
+    margin-left: 0px;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-weight: bold;
+}
+.nav-items > ul {
+    list-style-type: none;
     display: flex;
-    gap: 2rem;
-    padding: 0 10px 0;
-    width: auto;
+    align-items: baseline;
+    justify-content: space-evenly;
 }
+.nav-items > ul > li {
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+  }
 
 .nav-items ul li{
     list-style: none;
