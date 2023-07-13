@@ -55,7 +55,7 @@ const Body = () =>{
                     onClick={() => {
                         const data = filteredRestaurants(searchText, restaurantList);
                         if (data.length === 0) {
-                            setErrorMessage("No matches restaurant found");
+                            setErrorMessage("No restaurant found");
                         }else {
                             setErrorMessage("");   
                         }

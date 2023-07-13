@@ -46,6 +46,14 @@ body{
   .card:hover {
     transform: scale(1.05);
   }
+
+/* error message css */
+.error-container {
+    text-align: center;
+    font-size: large;
+    margin: 20px 0;
+  }
+  
 /*Shimmer CSS */
 .shimmer-container {
   display: flex;
