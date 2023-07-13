@@ -12,15 +12,20 @@ body{
 .header{
     display: flex;
     justify-content: space-between;
-    background-color: #05908b;
-    color: #fff;
-    padding:1rem;
+    margin: 10px;
+    width: auto;
+    background-color: rgb(1, 163, 144);
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+    color: black;
+    font-weight: bold;
 }
 
 .nav-items ul{
     display: flex;
     gap: 2rem;
-    padding: 0;
+    padding: 0 10px 0;
+    width: auto;
 }
 
 .nav-items ul li{
@@ -28,31 +33,43 @@ body{
 }
 
 .restaurant-list{
-    width:90%;
-    margin:2rem  auto;
-    display:flex;
-    flex-wrap:wrap;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
     justify-content:center;
-    gap: 1rem;
 }
 
 .card {
-    padding: 1rem;
-    width:200px;
-    border-radius:5px;
-    box-shadow:5px 5px 10px 0 gray;
-
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: -1px 4px 20px 14px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    margin: 20px;
+    cursor: pointer;
 }
 
-.ratings {
-    display:flex;
-    justify-content:space-between;
-    border-radius:5px;
-    margin-top:1rem;
-}
+
 .card > img {
     width:100%;
     border-radius:5px;
+}
+
+.card > span{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card > span > h4{
+    text-align: center;
+}
+.card > span > h4:first-child{
+    display: flex;
+    align-items: center;
+    background-color: rgb(19, 176, 1);
+    border-radius: 5px;
+    padding: 0 5px 0;
+    color: white;
 }
 
 .footer {

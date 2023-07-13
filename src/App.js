@@ -2,7 +2,7 @@ import react from 'react';
 import ReactDOM from 'react-dom/client';
 import Header from './components/Header';
 import Body from './components/Body';
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import './index.css'
 
 const App = () =>{
@@ -12,7 +12,7 @@ const App = () =>{
             <Body />
             <Footer />
         </>
-    );
+    );  
 }
 
 

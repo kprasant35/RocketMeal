@@ -17,14 +17,14 @@ const RestaurantCard = ({
                 cloudinaryImageId
                 }
             />
-            <div className="ratings">
-                <p>{name}</p> 
-                <p style={avgRating > 3 ? {color:"green"}:{color:"red"} }>{avgRating}</p>
-            </div>
-            <p>{costForTwoString}</p>
-            {/* optional chaining */}
-            <p>{cuisines?.join(", ")}</p> 
-            <p>{lastMileTravelString}</p>
+            <h2>{name}</h2>
+            <h4>{cuisines.join(", ")}</h4>
+            <h4>{area}</h4>
+            <span>
+                <h4>{avgRating}</h4>
+                <h4>{lastMileTravelString}</h4>
+                <h4>{costForTwoString}</h4>
+            </span>
         </div>
     )
 }
