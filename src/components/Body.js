@@ -1,6 +1,14 @@
+import {restaurantList} from "../constants.js"
+import RestaurantCard from "./RestaurantCard";
+
 const Body = () =>{
     return (
-        <div>Body</div>
+        <div className="restaurant-list">
+            {restaurantList.map((restaurant) =>{
+                
+                return <RestaurantCard {...restaurant.data} key={restaurant.data.id}/>;
+            })}
+        </div>
     );
 }
 
